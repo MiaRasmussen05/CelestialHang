@@ -2,8 +2,12 @@
 File to store the functions for the player to give the game stars
 and a review if they want to.
 """
+import time
 import gspread
 from google.oauth2.service_account import Credentials
+import colorama
+from colorama import Fore
+colorama.init()
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -35,9 +39,18 @@ def stars():
     print("""
 -.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
         """)
-    print("Please take a second to give us a review between 0 and 3 stars!")
-    print("Stars e.g: 2.7")
     classification = input("Give stars here:\n").strip(' ').replace(",", ".")
+    validation = validate_data(classification)
+    time.sleep(0.4)
+    while validation is None or validation is False:
+        print("\nInvalid input. Please enter a number between 0 and 3.")
+        print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
+        classification_input = input("Give stars here:\n").strip(' ')
+        classification = classification_input.replace(",", ".")
+        validation = validate_data(classification)
+    classification = float(classification)
 
 
 def validate_data(values):
