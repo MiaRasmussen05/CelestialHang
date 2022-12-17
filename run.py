@@ -3,7 +3,7 @@ Imports
 """
 import time
 import random
-import time
+import string
 import colorama
 from colorama import Fore, Style
 from words import easy_words, medium_words, hard_words, special_words
@@ -114,6 +114,40 @@ def get_word():
     word_m = random.choice(medium_words)
     word_h = random.choice(hard_words)
     word_s = random.choice(special_words)
+
+    if level == "E":
+        return word_e
+    elif level == "M":
+        return word_m
+    elif level == "H":
+        return word_h
+    elif level == "S":
+        return word_s
+    else:
+        print("A mistake has happened, try again")
+
+
+def game():
+    """
+    Function for the actul game play
+    a random word using single letters guesses with a
+    specific number of lives to get to the correct
+    hidden word.
+    """
+    global lives
+    global score
+    global guess
+    global word
+    lives = level_difficulty()
+    time.sleep(1)
+    choosen()
+    word = get_word()
+    word_col = Fore.BLUE + Style.BRIGHT + word + Fore.WHITE
+    alphabet = set(string.ascii_lowercase)
+    needed_letters = set(word)
+    guessed_letters = set()
+    separator()
+    time.sleep(0.5)
 
 
 def level_difficulty():
