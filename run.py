@@ -255,6 +255,57 @@ Oh no, {user_guessed} is not in the word, try again!""")
         elif level == "S":
             score += 4
 
+        if score == 32:
+            game_end_art.hidden_art()
+            print(f"""
+       Would you look at that {name}, you found the hidden key!
+          Maybe it would be worth it doing another round.
+Take a closer look at the difficulties before you choose your path.
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+        elif score == 25:
+            game_end_art.art_twentyfive()
+            print(f"""
+                    You are on a roll here!
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+        elif score == 50:
+            game_end_art.art_fifty()
+            print(f"""
+     How are you doing this! Can I borrow some of that skill?
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+        elif score == 75:
+            game_end_art.art_seventyfive()
+            print(f"""
+                  How high are you going to go!!!
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+        elif score == 100:
+            game_end_art.art_onehundred()
+            print(f"""
+               Not even the sky is a limit for you!
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+        else:
+            game_end_art.normal_art()
+            print(f"""
+            Congratulations {name} you guessed the word!
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+
 
 def level_difficulty():
     """
