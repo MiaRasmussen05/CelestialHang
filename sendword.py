@@ -107,3 +107,17 @@ def update_ideas_worksheet(ideas_value):
         print(f"Thank you for sending in the words: {ideas_value}\n")
     else:
         print(f"Thank you for sending in the word: {ideas_value}\n")
+
+
+def send_new_words():
+    """
+    Run functions
+    """
+    valid = False
+    while not valid:
+        ideas = new_words()
+        if ideas:
+            valid = True
+            update_ideas_worksheet(ideas)
+        elif not ideas:
+            break
