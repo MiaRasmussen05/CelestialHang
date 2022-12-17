@@ -51,6 +51,167 @@ def stars():
         classification = classification_input.replace(",", ".")
         validation = validate_data(classification)
     classification = float(classification)
+    if classification >= 3:
+        print(Fore.YELLOW + r"""
+          A                      A                      A
+         /*\                    /*\                    /*\
+ _______/***\_______    _______/***\_______    _______/***\_______
+'.*****************.'  '.*****************.'  '.*****************.'
+  '.*************.'      '.*************.'      '.*************.'
+    '.*********.'          '.*********.'          '.*********.'
+    /****.^.****\          /****.^.****\          /****.^.****\
+   /*. '     ' .*\        /*. '     ' .*\        /*. '     ' .*\
+  /'             '\      /'             '\      /'             '\
+        """ + Fore.WHITE)
+    elif classification >= 2.8:
+        print(Fore.YELLOW + fr"""
+          A                      A                    {first}
+         /*\                    /*\                    {second}
+ _______/***\_______    _______/***\_______    {third}
+'.*****************.'  '.*****************.'  '.*****************.'
+  '.*************.'      '.*************.'      '.*************.'
+    '.*********.'          '.*********.'          '.*********.'
+    /****.^.****\          /****.^.****\          /****.^.****\
+   /*. '     ' .*\        /*. '     ' .*\        /*. '     ' .*\
+  /'             '\      /'             '\      /'             '\
+    """ + Fore.WHITE)
+    elif classification >= 2.5:
+        print(Fore.YELLOW + fr"""
+          A                      A                    {first}
+         /*\                    /*\                    {second}
+ _______/***\_______    _______/***\_______    {third}
+'.*****************.'  '.*****************.'  {forth}
+  '.*************.'      '.*************.'      {fifth}
+    '.*********.'          '.*********.'          '.*********.'
+    /****.^.****\          /****.^.****\          /****.^.****\
+   /*. '     ' .*\        /*. '     ' .*\        /*. '     ' .*\
+  /'             '\      /'             '\      /'             '\
+    """ + Fore.WHITE)
+    elif classification >= 2.3:
+        print(Fore.YELLOW + fr"""
+          A                      A                    {first}
+         /*\                    /*\                    {second}
+ _______/***\_______    _______/***\_______    {third}
+'.*****************.'  '.*****************.'  {forth}
+  '.*************.'      '.*************.'      {fifth}
+    '.*********.'          '.*********.'          {sixth}
+    /****.^.****\          /****.^.****\          {seventh}
+   /*. '     ' .*\        /*. '     ' .*\        /*. '     ' .*\
+  /'             '\      /'             '\      /'             '\
+    """ + Fore.WHITE)
+    elif classification >= 2:
+        print(Fore.YELLOW + fr"""
+          A                      A                    {first}
+         /*\                    /*\                    {second}
+ _______/***\_______    _______/***\_______    {third}
+'.*****************.'  '.*****************.'  {forth}
+  '.*************.'      '.*************.'      {fifth}
+    '.*********.'          '.*********.'          {sixth}
+    /****.^.****\          /****.^.****\          {seventh}
+   /*. '     ' .*\        /*. '     ' .*\        {eight}
+  /'             '\      /'             '\      {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 1.8:
+        print(Fore.YELLOW + fr"""
+          A                    {first}                    {first}
+         /*\                    {second}                   {second}
+ _______/***\_______    {third}    {third}
+'.*****************.'  '.*****************.'  {forth}
+  '.*************.'      '.*************.'      {fifth}
+    '.*********.'          '.*********.'          {sixth}
+    /****.^.****\          /****.^.****\          {seventh}
+   /*. '     ' .*\        /*. '     ' .*\        {eight}
+  /'             '\      /'             '\      {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 1.5:
+        print(Fore.YELLOW + fr"""
+          A                    {first}                    {first}
+         /*\                    {second}                   {second}
+ _______/***\_______    {third}    {third}
+'.*****************.'  {forth}  {forth}
+  '.*************.'      {fifth}      {fifth}
+    '.*********.'          '.*********.'          {sixth}
+    /****.^.****\          /****.^.****\          {seventh}
+   /*. '     ' .*\        /*. '     ' .*\        {eight}
+  /'             '\      /'             '\      {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 1.3:
+        print(Fore.YELLOW + fr"""
+          A                    {first}                    {first}
+         /*\                    {second}                   {second}
+ _______/***\_______    {third}    {third}
+'.*****************.'  {forth}  {forth}
+  '.*************.'      {fifth}      {fifth}
+    '.*********.'          {sixth}          {sixth}
+    /****.^.****\          {seventh}         {seventh}
+   /*. '     ' .*\        /*. '     ' .*\        {eight}
+  /'             '\      /'             '\      {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 1:
+        print(Fore.YELLOW + fr"""
+          A                    {first}                    {first}
+         /*\                    {second}                   {second}
+ _______/***\_______    {third}    {third}
+'.*****************.'  {forth}  {forth}
+  '.*************.'      {fifth}      {fifth}
+    '.*********.'          {sixth}          {sixth}
+    /****.^.****\          {seventh}         {seventh}
+   /*. '     ' .*\        {eight}       {eight}
+  /'             '\      {ninth}     {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 0.8:
+        print(Fore.YELLOW + fr"""
+        {first}                    {first}                    {first}
+         {second}                   {second}                   {second}
+ {third}    {third}    {third}
+'.*****************.'  {forth}  {forth}
+  '.*************.'      {fifth}      {fifth}
+    '.*********.'          {sixth}          {sixth}
+    /****.^.****\          {seventh}         {seventh}
+   /*. '     ' .*\        {eight}       {eight}
+  /'             '\      {ninth}     {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 0.5:
+        print(Fore.YELLOW + fr"""
+        {first}                    {first}                    {first}
+         {second}                   {second}                   {second}
+ {third}    {third}    {third}
+{forth}  {forth}  {forth}
+  {fifth}      {fifth}      {fifth}
+    '.*********.'          {sixth}          {sixth}
+    /****.^.****\          {seventh}         {seventh}
+   /*. '     ' .*\        {eight}       {eight}
+  /'             '\      {ninth}     {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 0.3:
+        print(Fore.YELLOW + fr"""
+        {first}                    {first}                    {first}
+         {second}                   {second}                   {second}
+ {third}    {third}    {third}
+{forth}  {forth}  {forth}
+  {fifth}      {fifth}      {fifth}
+    {sixth}          {sixth}          {sixth}
+    {seventh}         {seventh}         {seventh}
+   /*. '     ' .*\        {eight}       {eight}
+  /'             '\      {ninth}     {ninth}
+    """ + Fore.WHITE)
+    elif classification >= 0:
+        print(Fore.YELLOW + fr"""
+        {first}                     {first}                    {first}
+         {second}                    {second}                   {second}
+ {third}     {third}    {third}
+{forth}   {forth}  {forth}
+  {fifth}       {fifth}      {fifth}
+    {sixth}           {sixth}          {sixth}
+    {seventh}          {seventh}         {seventh}
+   {eight}        {eight}       {eight}
+  {ninth}      {ninth}     {ninth}
+    """ + Fore.WHITE)
+    else:
+        print("\nInvalid input. Please enter a number between 0 and 3.")
+    print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
 
 
 def validate_data(values):
