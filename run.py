@@ -425,3 +425,32 @@ def game_end():
         play = input(f"""
           Yes {name}! Want to try again? yes = y, no = n:\n
         """).lower().strip(' ')
+
+    while True:
+        if play == "y":
+            print("\n")
+            print(f"              That is great {name}. Let's get to it!")
+            separator()
+            game()
+            game_end()
+        elif play == "n":
+            separator()
+            time.sleep(2)
+            print(f"""
+             Thanks you {name} for playing CelestialHang""")
+            print("                    Hope to see you again soon!" + "\n")
+            time.sleep(1.3)
+            logo()
+            print("""
+                          Copyright ©Mia Rasmussen 2022
+  Disclaimer: this game was built for a project and is not for commercial use
+     I do not own the words that was used in any of the level difficulties.
+            """)
+            time.sleep(5)
+            exit()
+        else:
+            separator()
+            print("""
+                Sorry let's try that one more time!""")
+            play = input("""
+               Want to try again? yes = y, no = n:\n""").lower().strip(' ')
