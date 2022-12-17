@@ -9,6 +9,8 @@ from colorama import Fore, Style
 from words import easy_words, medium_words, hard_words, special_words
 import hangman
 import gameendart as game_end_art
+from sendword import send_new_words
+from review import star_review
 colorama.init()
 
 
@@ -434,6 +436,9 @@ def game_end():
             game_end()
         elif play == "n":
             separator()
+            send_new_words()
+            time.sleep(1.2)
+            star_review()
             time.sleep(2)
             print(f"""
              Thanks you {name} for playing CelestialHang""")

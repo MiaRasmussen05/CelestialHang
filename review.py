@@ -9,6 +9,9 @@ import colorama
 from colorama import Fore
 colorama.init()
 
+# variables
+review_text = ""
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
