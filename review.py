@@ -28,3 +28,20 @@ def stars():
     print("Please take a second to give us a review between 0 and 3 stars!")
     print("Stars e.g: 2.7")
     classification = input("Give stars here:\n").strip(' ').replace(",", ".")
+
+
+def validate_data(values):
+    """
+    Validates a given value to ensure that it is a
+    number between 0 and 3.
+    With it being a float to make sure
+    that the input can also be 2.4 and not just a whole number.
+    """
+    try:
+        values = float(values)
+        if 0 <= values <= 3:
+            return True
+        else:
+            return False
+    except ValueError:
+        return False
