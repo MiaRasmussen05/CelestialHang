@@ -15,3 +15,45 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
     - I want to be able to find the special level by earning enough point, and then keep playing it.
     - I want to be able to submit my own words for the game so that I can contribute to the game and make it more interesting for myself and others.
     - I want to be able to grade the game with stars and give review so that I can give feedback and help improve the game for future players.
+
+## __Design__
+
+### __Features__
+
+### Existing Features
+
+### Future Features
+
+### __Color__
+
+### __FlowChart__
+
+## Technology
+
+### Technologies Used
+
+### Programs Used
+
+## __Testing__
+
+### Pep8 valitation in Gitpod workspace
+
+### Test cases
+
+### Fixed bugs
+
+### Full testing
+
+## Improvements
+
+## __Deployment__
+
+## __Credits__
+
+## Credits
+
+### Code Used
+
+### Content 
+
+### Honourable mentions
