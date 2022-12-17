@@ -234,3 +234,16 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
 - However, the art in itself was created by me.
 
 ### Honourable mentions
+- Tutor Assistance Jason for doing his best at helping me figure out a bug that was happening after deplyment, but in the end was my computer that need to be updated.
+
+- Tutor Assistance Ed for helping me find an error that had appeared that was causing input not to be send to google spreadsheet in my sendword file.
+
+- Tutor Assistance Gemma for trying to help me make spaces inside the word the player is guessing if it is multiple words.
+
+- [Bogdan/Bogdan_5P](https://github.com/Bogdan933) for taking his time to test out the game.
+
+- [Tom/Tom F](https://github.com/TuckerFaulk) for taking his time to test out the game.
+
+- [Daniel Harder](https://github.com/danio86) for taking his time to test out the game.
+
+- [Rashidat/Rashidat_5P](https://github.com/https://github.com/shida18719) for taking her time to test out the game.
