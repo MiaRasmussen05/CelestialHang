@@ -8,6 +8,7 @@ import colorama
 from colorama import Fore, Style
 from words import easy_words, medium_words, hard_words, special_words
 import hangman
+import gameendart as game_end_art
 colorama.init()
 
 
@@ -235,6 +236,24 @@ Oh no, {user_guessed} is not in the word, try again!""")
             print(hangman.__H_LIVES__[lives])
         else:
             print(hangman.__S_LIVES__[lives])
+
+        separator()
+        game_end_art.game_over_art()
+        print(f"""
+                  Oh no, {name}, you've been hanged!
+
+                        The word was {word_col}
+
+                        Your score is {score}""")
+    else:
+        if level == "E":
+            score += 1
+        elif level == "M":
+            score += 2
+        elif level == "H":
+            score += 3
+        elif level == "S":
+            score += 4
 
 
 def level_difficulty():
