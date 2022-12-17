@@ -116,6 +116,39 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
 
 ### Test cases
 
+  - __As a visiting user, I want to be able to play the hangman game__
+  - After a difficulty have been choosen the game begins. At the bottom you can take a guess on what letter there is in the word. Is the letter in it a letter show up where there where an underscore. Until there either is no more lives left or the word have been found and game won.
+
+  ![Game](./assets/game.PNG)
+
+  - __As a visiting user, I want to be able to understand the game without much help, while also be able to read the rules for the game.__
+  - The rules are one of the first thing a visitor gets to see. It is there for extra information, or if the visitor want's to check them over to be sure.
+
+  ![Rules](./assets/rules.PNG)
+  
+  - __As a visiting user, I will be told if I write invalid characters and then can redo my input.__
+  - If at any input a visitor give either wrong data so invalid input or clicka wrong key, the game has multiple messages about that, and the visitor is asked to give the input again.
+  ![Mistake](./assets/mistake.PNG)
+
+  - __As a visiting user, I want to be able to choose a difficulty level based on skill level.__
+  - The visitor can choose whatever level they want, a level based on what they think they can handle.
+  ![Difficulty](./assets/difficulty.PNG)
+
+  - __As a visiting user, I want to be able to find the special level by earning enough point, and then keep playing it.__
+- When the visitor have played a certen amount of times and gotten the score the key will either show or just open up for the visitor to try to guess it's words and theme. Which is still space themede but something in space.
+
+  ![Special level](./assets/special.PNG)
+
+  - __As a visiting user, I want to be able to submit my own words for the game so that I can contribute to the game and make it more interesting for myself and others.__
+  - The visitor can after decided not wanting to play anymore, decide if they want to add some words, there will be send for review.
+
+  ![Send](./assets/newwords.PNG)
+
+  - __As a visiting user, I want to be able to grade the game with stars and give review so that I can give feedback and help improve the game for future players.__
+  - Just like with the sending of words, the visitor gets to input a number for stars. And after the visitor can decide to leave feedback.
+
+  ![Review](./assets/grade.PNG)
+
 ### Fixed bugs
 
 ### Full testing
