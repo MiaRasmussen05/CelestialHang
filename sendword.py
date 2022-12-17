@@ -77,3 +77,33 @@ E.g: Virgo,Libra,Aries,Leo,Cancer""")
 -.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
             """)
                 break
+
+
+def update_ideas_worksheet(ideas_value):
+    """
+    Receives a list of words to be inserted into a worksheet
+    Update the relevant worksheet with the data provided
+    Make sure the words are not less then 1 or more then 5.
+    """
+    if len(ideas_value) < 1 or len(ideas_value) > 5:
+        print("\nPlease enter between 1 and 5 words separated by commas.\n")
+
+    print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+            """)
+    if len(ideas_value) > 2:
+        print("\nSending words into review...")
+    else:
+        print("\nSending word into review...")
+
+    worksheet_to_update = SHEET.worksheet("ideas")
+    worksheet_to_update.append_row(ideas_value)
+
+    if len(ideas_value) > 2:
+        print("\nYour words is now up for review.\n")
+    else:
+        print("\nYour word is now up for review.\n")
+    if len(ideas_value) > 2:
+        print(f"Thank you for sending in the words: {ideas_value}\n")
+    else:
+        print(f"Thank you for sending in the word: {ideas_value}\n")
