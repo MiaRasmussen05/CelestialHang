@@ -55,4 +55,102 @@ def hidden_art():
      *           o        .      *   '       .      o
      '    +    '       *       .    +      *     .      +
         """)
-        
+
+
+def art_twentyfive():
+    """
+    Game art for if the player hits the score of 25
+    """
+    first = Fore.CYAN + "_____   _______" + Fore.WHITE
+    second = Fore.CYAN + r"|___   \|    ___|" + Fore.WHITE
+    third = Fore.CYAN + r"\   |   |__" + Fore.WHITE
+    forth = Fore.CYAN + r"__/   |___   \ " + Fore.WHITE
+    fifth = Fore.CYAN + r"/   __/    \   |" + Fore.WHITE
+    sixth = Fore.CYAN + "|   |___ ___/   |" + Fore.WHITE
+    seventh = Fore.CYAN + "|_______|_____ /" + Fore.WHITE
+    print(f"""      *     ,    o     .     .       +         .        *
+     .           .     ~+ {first} +    |   '        .
+        .   |       *    {second}   - o -       +
+     *    - o -            . {third}   .   |      .
+            |      .   '   {forth}   o             '
+       +       ~+         {fifth}*       +    *
+     .               *   {sixth}  .   '    .    .
+            '          . {seventh}      ~~+     .   *
+     *           o        '    .    *               o
+     '    +    '       *     '   +     .   *     .      +
+            """)
+
+
+def art_fifty():
+    """
+    Game art for if the player hits the score of 50
+    """
+    first = Fore.CYAN + "_______  ______" + Fore.WHITE
+    second = Fore.CYAN + r"|    ___|/  __  \ " + Fore.WHITE
+    third = Fore.CYAN + r"|   |__ |  |  |  |" + Fore.WHITE
+    forth = Fore.CYAN + r"|___   \|  |  |  |" + Fore.WHITE
+    fifth = Fore.CYAN + r"\   |  |  |  |" + Fore.WHITE
+    sixth = Fore.CYAN + "___/   |  |__|  |" + Fore.WHITE
+    seventh = Fore.CYAN + r"|_____ / \______/" + Fore.WHITE
+    print(f"""      *     ,    o     .     .       +         .        *
+     .           .     ~+ {first} +    |   '        .
+        .   |       *    {second}  - o -       +
+     *    - o -          {third}.   |      .
+            |      .   ' {forth}  o             '
+       +       ~+          , {fifth}       +    *
+     .               *    {sixth} .   '    .    .
+            '          . {seventh}     ~~+     .   *
+     *           o        '    .    *               o
+     '    +    '       *     '   +     .   *     .      +
+            """)
+
+
+def art_seventyfive():
+    """
+    Game art for if the player hits the score of 75
+    """
+    first = Fore.CYAN + "_________ _______" + Fore.WHITE
+    second = Fore.CYAN + r"|______   |    ___|" + Fore.WHITE
+    third = Fore.CYAN + r"/  /|   |__" + Fore.WHITE
+    forth = Fore.CYAN + r"/  / |___   \ " + Fore.WHITE
+    fifth = Fore.CYAN + r"/  /" + Fore.WHITE
+    sixth = Fore.CYAN + r"\   |" + Fore.WHITE
+    seventh = Fore.CYAN + "/  /" + Fore.WHITE
+    eight = Fore.CYAN + r"___/   |" + Fore.WHITE
+    ninth = Fore.CYAN + r"/__/    |_____ /" + Fore.WHITE
+    print(f"""      *     ,    o     .     .       +         .        *
+     .           .    ~+ {first} +      |         .
+        .   |       *   {second}     - o -    +
+     *    - o -            o  {third}  .      |   .
+            |      .   '     {forth}  o             '
+       +       ~+         + {fifth}    . {sixth}       +    *
+     .               *     {seventh} ,  {eight} .   '    .    .
+            '          .  {ninth}     ~~+     .   *
+     *           o        '    .    *               o
+     '    +    '       *     '   +     .   *     .      +
+            """)
+
+
+def art_onehundred():
+    """
+    Game art for if the player hits the score of 100
+    """
+    first = Fore.CYAN + "____  ______" + Fore.WHITE
+    second = Fore.CYAN + r"______" + Fore.WHITE
+    third = Fore.CYAN + r"/    |/  __  \ /  __  \ " + Fore.WHITE
+    forth = Fore.CYAN + r"/_    |  |  |  |  |  |  |" + Fore.WHITE
+    fifth = Fore.CYAN + r"|   |  |  |  |  |  |  |" + Fore.WHITE
+    sixth = Fore.CYAN + r"|   |  |  |  |  |  |  |" + Fore.WHITE
+    seventh = Fore.CYAN + "|   |  |__|  |  |__|  |" + Fore.WHITE
+    eight = Fore.CYAN + r"|___|\______/ \______/" + Fore.WHITE
+    print(f"""      *     ,    o     .     .       +         .        *
+     .          .   ~+ {first} . {second}+      |         .
+        .   |       * {third}    - o -    +
+     *    - o -      {forth}.    |   .
+            |      .   {fifth}   o          '
+       +       ~+      {sixth}    +    *
+     .               * {seventh}  '    .    .
+            '          {eight}  ~~+     .   *
+     *           o   '    '    .    *               o
+     '    +    '       *     '   +     .   *     .      +
+            """)
