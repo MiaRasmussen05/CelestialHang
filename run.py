@@ -454,3 +454,21 @@ def game_end():
                 Sorry let's try that one more time!""")
             play = input("""
                Want to try again? yes = y, no = n:\n""").lower().strip(' ')
+
+
+def main():
+    """
+    Run all program functions
+    """
+    welcome_to()
+    time.sleep(0.6)
+    logo()
+    time.sleep(0.7)
+    welcome_player()
+    time.sleep(0.5)
+    game()
+
+
+if __name__ == "__main__":
+    main()
+    game_end()
