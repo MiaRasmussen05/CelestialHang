@@ -154,3 +154,29 @@ def art_onehundred():
      *           o   '    '    .    *               o
      '    +    '       *     '   +     .   *     .      +
             """)
+
+
+def normal_art():
+    """
+    Game art for when the player wins a round
+    """
+    first = Fore.YELLOW + "____________" + Fore.WHITE
+    second = Fore.YELLOW + r".-\    _     /-." + Fore.WHITE
+    third = Fore.YELLOW + r"| (|   / |    |) |" + Fore.WHITE
+    forth = Fore.YELLOW + r"'-|     |    |-'" + Fore.WHITE
+    fifth = Fore.YELLOW + r"\    _|_   /" + Fore.WHITE
+    sixth = Fore.YELLOW + "'.      .'" + Fore.WHITE
+    seventh = Fore.YELLOW + r"_`)  (`_" + Fore.WHITE
+    eight = Fore.YELLOW + r"_/________\_" + Fore.WHITE
+    ninth = Fore.YELLOW + r"/____________\ " + Fore.WHITE
+    print(f"""      *     .    o     .     .       +         .        *
+     .           .      ~+ {first}   +    |   '        .
+        .   |       *    {second}    - o -       +
+     *    - o -         {third} .   |      .
+            |      .   ' {forth}    o             '
+       +       ~+         .{fifth}   *       +    *
+     .               *      {sixth}  .       '    .    .
+            '          .   + {seventh}      .   ~~+     .   *
+     *           o        .{eight}             o
+     '    +    '       *  {ninth}  *     .      +
+            """)
