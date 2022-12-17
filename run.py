@@ -149,6 +149,18 @@ def game():
     separator()
     time.sleep(0.5)
 
+    guess = []
+    for letter in word:
+        if letter == ' ':
+            guess.append(' ')
+            # Added append first to show the space between 2 word
+            # Then discard it from the list of needed letters
+            needed_letters.discard(letter)
+        elif letter in guessed_letters:
+            guess.append(letter)
+        else:
+            guess.append('_')
+
 
 def level_difficulty():
     """
