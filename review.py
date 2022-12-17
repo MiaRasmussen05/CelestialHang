@@ -22,6 +22,16 @@ def stars():
     Let the visitor give stars and review of the game
     while putting them on a spreadsheet
     """
+    global classification
+    first = Fore.WHITE + "  A" + Fore.YELLOW
+    second = Fore.WHITE + r"/ \ " + Fore.YELLOW
+    third = Fore.WHITE + r"_______/   \_______" + Fore.YELLOW
+    forth = Fore.WHITE + r"'.                 .'" + Fore.YELLOW
+    fifth = Fore.WHITE + r"'.             .'" + Fore.YELLOW
+    sixth = Fore.WHITE + "'.         .'" + Fore.YELLOW
+    seventh = Fore.WHITE + r"/    .^.    \ " + Fore.YELLOW
+    eight = Fore.WHITE + r"/ . '     ' . \ " + Fore.YELLOW
+    ninth = Fore.WHITE + r"/'             '\ " + Fore.YELLOW
     print("""
 -.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
         """)
