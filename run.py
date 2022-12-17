@@ -150,6 +150,37 @@ def game():
     time.sleep(0.5)
 
     while len(needed_letters) > 0 and lives > 0:
+        print("Letters already used: ", ' '.join(sorted(guessed_letters)))
+        if level == "E":
+            if lives >= 4:
+                print('\n' + 'Lives left:' + Fore.GREEN, lives, Fore.WHITE)
+            elif lives >= 2:
+                print('\n' + 'Lives left:' + Fore.YELLOW, lives, Fore.WHITE)
+            elif lives >= 0:
+                print('\n' + 'Lives left:' + Fore.RED, lives, Fore.WHITE)
+        elif level == "M":
+            if lives >= 5:
+                print('\n' + 'Lives left:' + Fore.GREEN, lives, Fore.WHITE)
+            elif lives >= 3:
+                print('\n' + 'Lives left:' + Fore.YELLOW, lives, Fore.WHITE)
+            elif lives >= 0:
+                print('\n' + 'Lives left:' + Fore.RED, lives, Fore.WHITE)
+        elif level == "H":
+            if lives >= 7:
+                print('\n' + 'Lives left:' + Fore.GREEN, lives, Fore.WHITE)
+            elif lives >= 4:
+                print('\n' + 'Lives left:' + Fore.YELLOW, lives, Fore.WHITE)
+            elif lives >= 0:
+                print('\n' + 'Lives left:' + Fore.RED, lives, Fore.WHITE)
+        elif level == "S":
+            if lives >= 8:
+                print('\n' + 'Lives left:' + Fore.GREEN, lives, Fore.WHITE)
+            elif lives >= 4:
+                print('\n' + 'Lives left:' + Fore.YELLOW, lives, Fore.WHITE)
+            elif lives >= 0:
+                print('\n' + 'Lives left:' + Fore.RED, lives, Fore.WHITE)
+        print('Score:', score, )
+
         guess = []
         for letter in word:
             if letter == ' ':
