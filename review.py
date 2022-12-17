@@ -269,3 +269,30 @@ def review():
                 print("""
 -.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
         """)
+
+
+def update_review_worksheets():
+    """
+    Receives a list of integers to be inserted into a worksheet
+    Update the relevant worksheet with the data provided
+    """
+    print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
+    print("Sending in your review...\n")
+
+    worksheet_to_update = SHEET.worksheet("stars")
+    worksheet_to_update.append_row([classification, review_text])
+
+    print("Thank you for sending in a review!\n")
+    print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
+
+
+def star_review():
+    """
+    Function to have both stars and review going right after each other
+    """
+    stars()
+    review()
