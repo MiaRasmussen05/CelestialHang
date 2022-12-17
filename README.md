@@ -150,10 +150,27 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
   ![Review](./assets/grade.PNG)
 
 ### Fixed bugs
+  - One of my bugs where the fact that when choosing the difficulty level you would have it twice.
+  ![Double bug](./assets/double.PNG)
+  This was fixed by fixing position of the game function to be above the level_difficulty fuction and not under it as well as deleting the main call on the level_difficulty fuction sinde the game. Because it was being called on the second time at the top of the game function.
+
+  - My computer had problems after the deplyment to Heruko. All the underscores would disapear at random times and not come back. This was fixed not in the code but on my computer.
+  ![Underscore bug](./assets/underscore.PNG)
+  ![Underscore fixed](./assets/underscorefix.PNG)
 
 ### Full testing
+  - The game was tested in Chrome, Safari and Firefox browsers. It worked well on all browsers.
+  - Tested for bugs and to make sure everything works.
+  - Tested for all scenarios with valid guesses.
+  - Tested for all scenarios with invalid guesses e.g numbers, characters spaces etc.
+  - This has been tested by more then one person, to see if there where bugs.
+  - Tested to make sure that input gets send to google spreadsheet.
 
 ## Improvements
+
+  - The Easy level can sometimes be a lot harder then the Hard level. Lives amount might have to be switched around.
+
+  - This game is not at all responsive, but can be played on all screens. It however, can be a bit hard to play on phones. This was however a backeend only created game so functionality was the main object for the game.
 
 ## __Deployment__
 
