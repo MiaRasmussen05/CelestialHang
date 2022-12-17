@@ -4,6 +4,46 @@ It is time to see if you can guess the right answer before the person gets hange
 
 It is a game for all ages, alone as a family or a group. A fun guessing game to use a bit of time. So why don't you go ahead and see if you can save the day or maybe you can find the hidden level hidden in your score.
 
+![CelestialHang logo](./assets/logo.PNG) 
+
+[CelestialHang on Heroku](https://celestial-hang-test.herokuapp.com/)
+
+![GitHub shield last commit](https://img.shields.io/github/last-commit/MiaRasmussen05/CelestialHang?color=orange)
+![GitHub shield language count](https://img.shields.io/github/languages/count/MiaRasmussen05/CelestialHang?color=yellow)
+![GitHub shield contributors](https://img.shields.io/github/contributors/MiaRasmussen05/CelestialHang?color=brightgreen)
+
+## Contents
+
+- [User Stories](#user-stories)
+
+- [Design](#design)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+
+  - [Color](#color)
+
+- [FlowChart](#flowchart)
+
+- [Technology](#technology)
+  - [Technologies Used](#technologies-used)
+  - [Programs Used](#programs-used)
+
+- [Testing](#testing)
+  - [Pep8 valitation in Gitpod workspace](#pep8-valitation-in-gitpod-workspace)
+  - [Test cases](#test-cases)
+  - [Fixed bugs](#fixed-bugs)
+  - [Full testing](#full-testing)
+
+- [Improvements](#improvements)
+
+- [Deployment](#deployment)
+
+- [Credits](#credits)
+  - [Code Used](#code-used)
+  - [Content](#content)
+  - [Honourable mentions](#honourable-mentions)
+
 ## __User Stories__
 
 - ### As a player
