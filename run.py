@@ -211,3 +211,11 @@ def level_difficulty():
          Please write one of the following: E, M or H
            to choose the difficulty level you want.
                 """)
+
+
+def choosen():
+    """
+    Message to show the player which level they have choosen as the game loads
+    """
+    separator()
+    print(f"             {name} you choose {level_col} so let's get started!")
