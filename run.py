@@ -149,17 +149,61 @@ def game():
     separator()
     time.sleep(0.5)
 
-    guess = []
-    for letter in word:
-        if letter == ' ':
-            guess.append(' ')
-            # Added append first to show the space between 2 word
-            # Then discard it from the list of needed letters
-            needed_letters.discard(letter)
-        elif letter in guessed_letters:
-            guess.append(letter)
+    while len(needed_letters) > 0 and lives > 0:
+        guess = []
+        for letter in word:
+            if letter == ' ':
+                guess.append(' ')
+                # Added append first to show the space between 2 word
+                # Then discard it from the list of needed letters
+                needed_letters.discard(letter)
+            elif letter in guessed_letters:
+                guess.append(letter)
+            else:
+                guess.append('_')
+
+        if level == "E":
+            print(hangman.__E_LIVES__[lives])
+        elif level == "M":
+            print(hangman.__M_LIVES__[lives])
+        elif level == "H":
+            print(hangman.__H_LIVES__[lives])
         else:
-            guess.append('_')
+            print(hangman.__S_LIVES__[lives])
+
+        print('The current word: ', ' '.join(guess))
+
+        user_guessed = input("""
+Please write a letter here:\n""").lower().strip(' ')
+
+        if user_guessed in alphabet - guessed_letters:
+            guessed_letters.add(user_guessed)
+            if user_guessed in needed_letters:
+                needed_letters.remove(user_guessed)
+                print('\nYou are so smart,', user_guessed, 'is in the word')
+
+            else:
+                lives = lives - 1
+                print(f"""
+Oh no, {user_guessed} is not in the word, try again!""")
+
+        elif user_guessed in guessed_letters:
+            print("\nYou've tried this letter already. Please try another.")
+
+        else:
+            print('\nInvalid character used! please type in a valid letter.')
+
+        separator()
+
+    if lives == 0:
+        if level == "E":
+            print(hangman.__E_LIVES__[lives])
+        elif level == "M":
+            print(hangman.__M_LIVES__[lives])
+        elif level == "H":
+            print(hangman.__H_LIVES__[lives])
+        else:
+            print(hangman.__S_LIVES__[lives])
 
 
 def level_difficulty():
