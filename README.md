@@ -220,7 +220,17 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
 ## Credits
 
 ### Code Used
+- For general background knowledge on how to code the guessing part of the hangman gamme I used the [YouTube tutorial](https://www.youtube.com/watch?v=cJJTnI22IF8&t=2s&ab_channel=KylieYing) by Kylie Ying.
+
+- Most of the graphics for the writing was made using [this software](https://ascii.mastervb.net/).
+
+- I imported some libraries that are already a part of the Python program: time, random, string, colorama, re and gspread for the google spreadsheet.
+
+- I also used the [Code Institute Python template](https://github.com/Code-Institute-Org/python-essentials-template) for this project.
 
 ### Content 
+- No words I used in this game is my own.
+
+- However, the art in itself was created by me.
 
 ### Honourable mentions
