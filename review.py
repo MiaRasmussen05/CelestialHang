@@ -229,3 +229,19 @@ def validate_data(values):
             return False
     except ValueError:
         return False
+
+
+def review():
+    """
+    Function for input of the review
+    """
+    global review_text
+
+    print("           Do you want to send a review with you grade?")
+    question_review = input("""
+            Do you want to send one? yes = y, no = n:\n""").lower().strip(' ')
+    if question_review != "n":
+        print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
+    time.sleep(0.3)
