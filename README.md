@@ -90,11 +90,29 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
 
 ### Technologies Used
 
+  - I have only used Python
+
 ### Programs Used
+  - Git - Was used for version control, the Gitpod terminal to commit and push to GitHub.
+
+  - [GitHub](https://github.com/) - Was used to store the project code
+
+  - [Shields](https://shields.io/) - Was used to add different shields into the README. 
+
+  - [Lucid](https://lucid.app/documents#/dashboard) -  Was used to create the flowchart.
+
+  - [Heroku](https://www.heroku.com) - Was used to deploy the game.
+
+  - [Ascii Art](https://ascii.mastervb.net/) - Was used for help on designing the ascii letters and numbers used.
 
 ## __Testing__
 
 ### Pep8 valitation in Gitpod workspace
+
+  - The Pep8 website is not working at the moment. There for I added the Pep8 validator into my Gitpod workspace.
+  - All errors have been fixed, it is showing some warnings because of the global keyword. However, this does not affect anything about the functionality. These can be changed by passing them as arguments at a later date.
+
+![Global keyword warnings](./assets/warnings.PNG)
 
 ### Test cases
 
