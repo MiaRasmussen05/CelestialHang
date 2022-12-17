@@ -71,9 +71,20 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
 
 ### Future Features
 
+  - A fun future feature could be a leader board that show top 20.
+  - Error messages with red background.
+  - Point system that changes by each difficulty and how quick you can do it. So points would be based on how many lifes you had left in that round.
+  - Multiplayer system. Where on one device multiplayer can be choosen and then 2 people can play against each other on guessing the most letters and losing the fewest lives. You could also play againt the computer.
+
 ### __Color__
 
+  - Colors used in the game was a part of a library already in python program: colorama.
+
 ### __FlowChart__
+
+- For visual aid to see what the game had to go through for it to work, I made this flowchart to go through each step for the basic ideas. The flowchart was created with [Lucid](https://lucid.app/documents#/dashboard).
+
+![Flowchart for the basic game](./assets/gameflowchart.PNG)
 
 ## Technology
 
