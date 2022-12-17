@@ -410,3 +410,18 @@ def choosen():
     """
     separator()
     print(f"             {name} you choose {level_col} so let's get started!")
+
+
+def game_end():
+    """
+    Function loop to choose to play again or stop
+    """
+    global play
+
+    if lives == 0:
+        play = input(f"""
+    That is to bad {name}! Want to try again? yes = y, no = n:\n""").strip(' ')
+    else:
+        play = input(f"""
+          Yes {name}! Want to try again? yes = y, no = n:\n
+        """).lower().strip(' ')
