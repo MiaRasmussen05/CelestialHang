@@ -333,7 +333,6 @@ def level_difficulty():
     if score >= 32:
         print(f"""                  For the {blue} level click {blue_s}""")
 
-
     difficulty = True
 
     while difficulty:
