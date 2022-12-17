@@ -245,3 +245,27 @@ def review():
 -.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
         """)
     time.sleep(0.3)
+    while True:
+        if question_review == "y":
+            review_text = input("Enter your review here:\n")
+            if len(review_text.split()) == 0:
+                print("Your review must contain at least one word.")
+            else:
+                update_review_worksheets()
+                break
+            print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
+        elif question_review == "n":
+            update_review_worksheets()
+            time.sleep(1.7)
+            print("                          Then on you go!")
+            break
+        else:
+            print("                   I am sorry I didn't get that...")
+            question_review = input("""
+            Do you want to send one? yes = y, no = n:\n""").lower().strip(' ')
+            if question_review != "n":
+                print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
