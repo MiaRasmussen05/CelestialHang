@@ -174,6 +174,47 @@ It is a game for all ages, alone as a family or a group. A fun guessing game to 
 
 ## __Deployment__
 
+  - __via gitpod__
+    - Log into GitHub.
+    - Make a repository
+    - Click the green button close to the top of the page that says Gitpod.
+    - After letting Gitpod load an alert pops up on the top of the screen, click cancel.
+    - Then click the button that says More Actions.
+    - Hereafter click Open in Browser.
+    - Now right click with your mouse over the big box on the left that has your repository name over it.
+    - Click new file.
+    - Then make an index.html file. 
+    - Go to the top of the index file and click ! and enter. This will make a start template.
+    - Make a basic structure for your index page.
+    - Click on terminal at the bottom of the page.
+    - write 'git add .'
+    - Then for your first commit write 'git commit -m "Initial commit".
+    - Hereafter write 'git push'.
+    - Your code have now been pushed back and saved on your GitHub repository.
+
+  - __Deployment to Heroku__
+    - First log into your Heroku page on [Heroku website](https://www.heroku.com)
+    - When on your dashboard click "new" and the click "create new app".
+    - Now give you app a name make sure it is availble and then choose a region.
+    - Click the "create app" button.
+    - Go first to the "settings page".
+    - If you are using a creds.js file then you will need to follow the next 4 steps.
+      - Scrool down and find the button that says "reveal config vars" and click it.
+      - Then write "CREDS" inside the box that says "KEY".
+      - With you github open find the creds.js file and copy past the whole thing .into the box beside "KEY" that says "VALUE".
+      - Now click the "add" button.
+    - Scroll down bit more to find buildpacks.
+    - Click on button that says "add buildpack".
+    - Then click "python" and then click "save changes" button.
+    - Repeat the last two steps but change the python buildpack out with nodejs.
+    - Now cLick the "deploy page".
+    - Click connct to Github in the deployment method.
+    - Then you serch in your repository for the one you need. DO make sure the name is exactly the same.
+    - Click the button "serch" and then click "connect"
+    - Choose between automatic deployment or manual.
+    - If manual was choosen wait for it to finish.
+    - Now click the button "view"
+
 ## __Credits__
 
 ## Credits
