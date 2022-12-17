@@ -11,6 +11,10 @@ import hangman
 colorama.init()
 
 
+# Veriables
+score = 0
+
+
 def welcome_to():
     """
     Welcome to the game art
@@ -110,3 +114,30 @@ def get_word():
     word_m = random.choice(medium_words)
     word_h = random.choice(hard_words)
     word_s = random.choice(special_words)
+
+
+def level_difficulty():
+    """
+    Choose level difficulty
+    """
+    green = Fore.GREEN + "easy" + Fore.WHITE
+    green_e = Fore.GREEN + "E" + Fore.WHITE
+    yellow = Fore.YELLOW + "medium" + Fore.WHITE
+    yellow_m = Fore.YELLOW + "M" + Fore.WHITE
+    red = Fore.RED + "hard" + Fore.WHITE
+    red_h = Fore.RED + "H" + Fore.WHITE
+    blue = Fore.BLUE + "special" + Fore.WHITE
+    blue_s = Fore.BLUE + "S" + Fore.WHITE
+
+    if score >= 32:
+        print("""
+         Choose one of the four levels to get started...""" + "\n")
+    else:
+        print("""
+         Choose one of the three levels to get started...""" + "\n")
+    time.sleep(0.6)
+    print(f"""                        For {green} click {green_e}
+                        For {yellow} click {yellow_m}
+                        For {red} click {red_h}""")
+    if score >= 32:
+        print(f"""                  For the {blue} level click {blue_s}""")
