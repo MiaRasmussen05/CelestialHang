@@ -1,3 +1,12 @@
+"""
+Imports
+"""
+import time
+import colorama
+from colorama import Fore, Style
+colorama.init()
+
+
 def welcome_to():
     """
     Welcome to the game art
@@ -31,3 +40,27 @@ def logo():
      *           o         .  |       *             o
      '    +    '       *      |    o       *     .      +
      ________________________/|\____________________________""" + "\n")
+
+
+def welcome_player():
+    """
+    Input a name to have a more personalized response
+    Color for the name verible
+    With a message to really welcome the visitor
+    Run the rules function
+    """
+    global name
+    name_col = input("Please enter you name here:\n")
+    name = Fore.MAGENTA + Style.BRIGHT + name_col + Fore.WHITE
+    print("\n" + f"""                          Welcome {name}
+               I hope you have fun and good luck!""" + "\n")
+    time.sleep(1)
+
+
+def separator():
+    """
+    Function to print separators to keep the different functions separated
+    """
+    print("""
+-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-.-*-
+        """)
