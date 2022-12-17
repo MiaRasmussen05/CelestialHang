@@ -2,8 +2,12 @@
 Imports
 """
 import time
+import random
+import time
 import colorama
 from colorama import Fore, Style
+from words import easy_words, medium_words, hard_words, special_words
+import hangman
 colorama.init()
 
 
@@ -95,3 +99,14 @@ def rules():
 5. Hidden in the scores there is a key. Are you the one that can find it
    to unlock the special level. Only one score will allow you to see the key,
    but you will still unlock the hidden level by passing it!""" + Fore.WHITE)
+
+
+def get_word():
+    """
+    Gets and chooses a random word from words file
+    out from which difficulty has been choosen
+    """
+    word_e = random.choice(easy_words)
+    word_m = random.choice(medium_words)
+    word_h = random.choice(hard_words)
+    word_s = random.choice(special_words)
