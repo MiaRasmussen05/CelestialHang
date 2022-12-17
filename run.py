@@ -141,3 +141,73 @@ def level_difficulty():
                         For {red} click {red_h}""")
     if score >= 32:
         print(f"""                  For the {blue} level click {blue_s}""")
+
+
+    difficulty = True
+
+    while difficulty:
+        global level
+        global level_col
+        level = input(f"""
+            {name} please choose a difficulty here:\n""").upper().strip(' ')
+        print("")
+        separator()
+        time.sleep(0.4)
+        if level == "E":
+            level_col = Fore.GREEN + level + Fore.WHITE
+            print(Fore.GREEN + r"""
+                      _____
+                     | ____|__ _ ___ _   _
+                     |  _| / _` / __| | | |
+                     | |___ (_| \__ \ |_| |
+                     |_____\__,_|___/\__, |
+                                     |___/
+            """ + Fore.WHITE)
+            lives = 5
+            return lives
+        elif level == "M":
+            level_col = Fore.YELLOW + level + Fore.WHITE
+            print(Fore.YELLOW + r"""
+               __  __          _ _
+              |  \/  | ___  __| (_)_   _ _ __ ___
+              | |\/| |/ _ \/ _` | | | | | '_ ` _ \
+              | |  | |  __/ (_| | | |_| | | | | | |
+              |_|  |_|\___|\__,_|_|\__,_|_| |_| |_|
+            """ + Fore.WHITE)
+            lives = 7
+            return lives
+        elif level == "H":
+            level_col = Fore.RED + level + Fore.WHITE
+            print(Fore.RED + r"""
+                      _   _               _
+                     | | | | __ _ _ __ __| |
+                     | |_| |/ _` | '__/ _` |
+                     |  _  | (_| | | | (_| |
+                     |_| |_|\__,_|_|  \__,_|
+            """ + Fore.WHITE)
+            lives = 10
+            return lives
+        if score >= 32:
+            if level == "S":
+                level_col = Fore.BLUE + level + Fore.WHITE
+                print(Fore.BLUE + r"""
+                 ____                  _       _
+                / ___| _ __   ___  ___(_) __ _| |
+                \___ \| '_ \ / _ \/ __| |/ _` | |
+                 ___) | |_) |  __/ (__| | (_| | |
+                |____/| .__/ \___|\___|_|\__,_|_|
+                      |_|
+                """ + Fore.WHITE)
+                lives = 11
+                return lives
+        else:
+            if score >= 32:
+                print("""
+         Please write one of the following: E, M, H or S
+             to choose the difficulty level you want.
+                """)
+            else:
+                print("""
+         Please write one of the following: E, M or H
+           to choose the difficulty level you want.
+                """)
